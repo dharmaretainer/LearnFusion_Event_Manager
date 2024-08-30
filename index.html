@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="border">Event Manager</h1>
+        
+        <div class="event-form">
+            <h2 class="border">Create New Event</h2>
+            <label for="event-title">Event Title:</label>
+            <input type="text" id="event-title" placeholder="Enter event title" >
+
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date">
+
+            <label for="event-time">Event Time:</label>
+            <input type="time" id="event-time">
+
+            <label for="event-description">Event Description:</label>
+            <textarea id="event-description" placeholder="Enter event description"></textarea>
+
+            <button id="create-event-btn">Create Event</button>
+        </div>
+
+        <div class="event-list">
+            <h2>Upcoming Events</h2>
+            <ul id="event-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
